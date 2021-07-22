@@ -10,7 +10,7 @@ CXXFLAGS = -g -Wall -Wextra -pedantic -std=c++17
 default: $(TARGET)
 all: default
 
-SOURCES = scan.c
+SOURCES = scan.cpp
 OBJECTS = $(patsubst %.c, %.o, $(patsubst %.cpp, %.opp, $(SOURCES)))
 HEADERS = $(wildcard *.h)
 
